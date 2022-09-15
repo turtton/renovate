@@ -5,9 +5,11 @@
   "schedule": [
     "after 1pm and before 5pm on Friday"
   ],
+  "labels": ["dependencies"],
   "packageRules": [
     {
-      "matchUpdateTypes": ["minor", "patch",],
+      "matchUpdateTypes": ["minor", "patch"],
+      "groupName": "dependencies (minor/patch)",
       "automerge": true,
       "automergeStrategy": "squash"
     }
